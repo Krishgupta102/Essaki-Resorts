@@ -1,0 +1,45 @@
+.roomcontainer {
+    position: relative;
+}
+
+.imgr {
+    position: relative;
+}
+
+.imgr img {
+    width: 100%;
+    height: 20rem;
+}
+
+/* Add this new overlay class */
+.imgr::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.paragra {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 4.5rem;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    z-index: 2;
+}
+
+.parad{
+    font-family: 'Playfair Display', serif;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
